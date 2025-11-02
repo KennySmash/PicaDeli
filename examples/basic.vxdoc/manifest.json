@@ -1,0 +1,7 @@
+{
+  "name": "basic-example",
+  "schema_version": "0.1.0",
+  "type": "vxdoc",
+  "description": "Minimal example for CLI validation"
+}
+

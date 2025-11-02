@@ -1,0 +1,6 @@
+{
+  "id": "node-1",
+  "type": "solid_color",
+  "params": { "color": "#ff00ff", "width": 64, "height": 64 }
+}
+

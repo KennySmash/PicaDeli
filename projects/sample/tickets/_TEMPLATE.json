@@ -1,0 +1,16 @@
+{
+  "id": "PD-XXX",
+  "title": "One-line, action-oriented summary",
+  "why": "Short rationale and intended impact",
+  "what": [
+    "Step 1",
+    "Step 2"
+  ],
+  "acceptance": [
+    "Measurable outcome 1",
+    "Measurable outcome 2"
+  ],
+  "owner": "@handle",
+  "links": ["#issue-or-doc"],
+  "created": "2025-11-01"
+}

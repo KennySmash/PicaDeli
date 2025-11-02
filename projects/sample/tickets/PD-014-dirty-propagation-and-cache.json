@@ -1,0 +1,21 @@
+{
+  "id": "PD-014",
+  "title": "Dirty propagation and node output cache",
+  "milestone": "M1: Core + Node runtime",
+  "why": "Avoid redundant evaluation and enable responsive edits",
+  "what": [
+    "Track per-node dirty state based on input/param changes",
+    "Cache by stable key: node-id + inputs-hash + params-hash",
+    "Invalidate downstream on change",
+    "Expose cache stats for tests"
+  ],
+  "acceptance": [
+    "Cache hit rate measurable in tests",
+    "Changing one param invalidates only affected subtree",
+    "No stale results under concurrent edits in unit tests"
+  ],
+  "owner": "@team/node",
+  "links": ["PD-013"],
+  "created": "2025-11-01"
+}
+

@@ -1,0 +1,70 @@
+# OS / Editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.Python
+.venv/
+.venv*/
+venv/
+ENV/
+pip-wheel-metadata/
+site/
+dist/
+build/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+__pypackages__/
+
+# Node (optional UI pipeline)
+node_modules/
+.pnpm-store/
+*.tsbuildinfo
+
+# CMake / C++ (future)
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+compile_commands.json
+Makefile
+*.ninja
+*.ninja_deps
+*.ninja_log
+
+# Rust (future)
+target/
+
+# Logs and caches
+logs/
+*.log
+.cache/
+
+# Local env/config
+.env
+.env.*
+.env.local
+.env.*.local
+
+# App documents (per-doc UI state)
+**/ui/panel_settings.json
+
+# Binary/media dumps (keep sample gitkeeps only)
+**/assets/**
+!**/assets/.gitkeep
+

@@ -1,0 +1,21 @@
+{
+  "id": "PD-016",
+  "title": "Integrate JSON Schema validation into vxcli",
+  "milestone": "M1: Core + Node runtime",
+  "why": "Provide strict validation against schemas with helpful errors",
+  "what": [
+    "Use python-jsonschema (optional) to validate manifest/nodes/layers",
+    "Add --strict flag to treat warnings as errors",
+    "Add --schema-dir override",
+    "Unit tests for success/failure paths"
+  ],
+  "acceptance": [
+    "Invalid docs produce clear error messages and non-zero exit",
+    "Strict mode catches extra properties per schema",
+    "Works without dependency installed (falls back to structural checks)"
+  ],
+  "owner": "@team/core",
+  "links": ["PD-002", "PD-004", "schemas/manifest.schema.json"],
+  "created": "2025-11-01"
+}
+

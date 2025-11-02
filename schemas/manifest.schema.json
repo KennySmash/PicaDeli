@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/manifest.schema.json",
+  "title": "PicaDeli Manifest (minimal scaffold)",
+  "type": "object",
+  "required": ["name", "schema_version", "type"],
+  "properties": {
+    "name": { "type": "string" },
+    "schema_version": { "type": "string" },
+    "type": { "enum": ["vxdoc"] }
+  },
+  "additionalProperties": true
+}
+

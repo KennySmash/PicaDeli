@@ -1,0 +1,20 @@
+{
+  "id": "PD-015",
+  "title": "Serialization round-trip tests for nodes/layers",
+  "milestone": "M1: Core + Node runtime",
+  "why": "Guarantee document stability and Git-friendly diffs",
+  "what": [
+    "Golden samples for nodes/ and layers/ JSON",
+    "Load->serialize->compare with canonicalization",
+    "Test stable ordering of object keys where applicable"
+  ],
+  "acceptance": [
+    "Round-trip equality for examples",
+    "Failures show clear diffs",
+    "Integrated in make test"
+  ],
+  "owner": "@team/core",
+  "links": ["PD-002", "PD-012"],
+  "created": "2025-11-01"
+}
+

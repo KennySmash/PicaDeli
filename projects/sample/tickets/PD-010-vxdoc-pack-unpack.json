@@ -1,0 +1,21 @@
+{
+  "id": "PD-010",
+  "title": "CLI support: pack/unpack .vxdoc (ZIP)",
+  "milestone": "M1: Core + Node runtime",
+  "why": "Align with ZIP-based micro-repo design and enable interchange",
+  "what": [
+    "Add vxcli commands: pack <dir> -> .vxdoc.zip; unpack <zip> -> dir",
+    "Preserve directory structure (manifest, nodes/, layers/, assets/, collab/)",
+    "Detect and refuse overwrite unless --force",
+    "Tests for round-trip pack->unpack idempotence"
+  ],
+  "acceptance": [
+    "Packing examples/basic.vxdoc produces a valid ZIP",
+    "Unpacked output validates via `vxcli validate`",
+    "Round-trip diff shows no content loss"
+  ],
+  "owner": "@team/core",
+  "links": ["PD-004", "schemas/manifest.schema.json", "README.md#Core Idea"],
+  "created": "2025-11-01"
+}
+

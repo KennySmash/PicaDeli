@@ -1,0 +1,20 @@
+{
+  "id": "PD-005",
+  "title": "Create Python plugin SDK stub (vx package)",
+  "why": "Enable early experimentation with node/tool registration",
+  "what": [
+    "Add plugins/vx/__init__.py with register() and plugin registry",
+    "Provide example plugin under plugins/examples/blur_plus/",
+    "Document API surface and lifecycle in plugins/README.md",
+    "Basic pytest for registration behavior"
+  ],
+  "acceptance": [
+    "pytest -q in plugins/ passes",
+    "Example plugin can be discovered by CLI/UI stubs",
+    "Docs illustrate adding a new node"
+  ],
+  "owner": "@team/plugins",
+  "links": ["README.md#Extending PicaDeli", "PD-003"],
+  "created": "2025-11-01"
+}
+

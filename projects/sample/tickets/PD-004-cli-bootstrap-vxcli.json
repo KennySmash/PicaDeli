@@ -1,0 +1,20 @@
+{
+  "id": "PD-004",
+  "title": "Bootstrap vxcli with validate and serve stubs",
+  "why": "Provide a single entrypoint for validation and dev workflows",
+  "what": [
+    "Create cli/ package/binary named vxcli",
+    "Add command: validate <path> (schema check)",
+    "Add command: serve <.vxdoc> (stub server/logging)",
+    "Wire to schemas validation from PD-002"
+  ],
+  "acceptance": [
+    "Running ./vxcli --help shows commands",
+    "validate returns non-zero on invalid sample",
+    "serve starts and logs stub events"
+  ],
+  "owner": "@team/core",
+  "links": ["PD-002", "PD-003"],
+  "created": "2025-11-01"
+}
+

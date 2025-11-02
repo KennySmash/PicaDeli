@@ -1,0 +1,21 @@
+{
+  "id": "PD-013",
+  "title": "Minimal node evaluator (CPU): solid_color + compose",
+  "milestone": "M1: Core + Node runtime",
+  "why": "Execute small graphs end-to-end before GPU path exists",
+  "what": [
+    "Implement evaluator that topologically walks DAG",
+    "Provide built-in nodes: solid_color(width,height,color), compose(A,B,mode)",
+    "Add simple image tensor (H,W,RGBA8) as ndarray or bytes",
+    "Tests for pixel correctness across basic graphs"
+  ],
+  "acceptance": [
+    "Example graph renders expected pixels",
+    "Evaluator rejects graphs with missing inputs",
+    "Performance baseline recorded for tiny graphs"
+  ],
+  "owner": "@team/node",
+  "links": ["PD-012", "README.md#Node Engine"],
+  "created": "2025-11-01"
+}
+

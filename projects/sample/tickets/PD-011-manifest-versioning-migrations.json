@@ -1,0 +1,21 @@
+{
+  "id": "PD-011",
+  "title": "Manifest versioning and basic migrations",
+  "milestone": "M1: Core + Node runtime",
+  "why": "Permit schema evolution with clear upgrade paths",
+  "what": [
+    "Define schema_version policy and supported range",
+    "Add vxcli subcommand: migrate <dir> --to <version>",
+    "No-op migration for 0.1.0; structure in place for future rules",
+    "Docs: versioning policy in docs/README-dev.md"
+  ],
+  "acceptance": [
+    "`vxcli migrate` reports when document is already up-to-date",
+    "Refuses unknown versions with actionable message",
+    "Unit tests cover version checks and dry-run"
+  ],
+  "owner": "@team/core",
+  "links": ["PD-002", "PD-004", "schemas/manifest.schema.json"],
+  "created": "2025-11-01"
+}
+

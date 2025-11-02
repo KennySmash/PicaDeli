@@ -1,0 +1,20 @@
+{
+  "id": "PD-007",
+  "title": "Baseline tests and CI wiring",
+  "why": "Catch regressions early across stacks and enforce standards",
+  "what": [
+    "Configure Rust tests (core/) and clippy checks",
+    "Configure CTest for C++ (if applicable)",
+    "Configure pytest for Python (plugins/)",
+    "Add GitHub Actions or equivalent: build, test, lint on PR"
+  ],
+  "acceptance": [
+    "Local make test runs all suites",
+    "CI status green on scaffold branches",
+    "Lint/format jobs fail on violations"
+  ],
+  "owner": "@team/devops",
+  "links": ["PD-001", "AGENTS.md#Coding-Style-\u0026-Naming-Conventions"],
+  "created": "2025-11-01"
+}
+

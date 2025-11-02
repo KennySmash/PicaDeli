@@ -1,0 +1,20 @@
+{
+  "id": "PD-003",
+  "title": "Create core runtime skeleton (Rust/C++)",
+  "why": "Provide host APIs, I/O scaffolding, and test bed for serialization",
+  "what": [
+    "Init Rust crate or CMake target under core/",
+    "Add JSON read/write for manifest and nodes (stubs)",
+    "Expose minimal FFI/bindings surface for Python (placeholder)",
+    "Unit tests for round-trip serialize/deserialize"
+  ],
+  "acceptance": [
+    "cargo test or ctest passes in core/",
+    "Round-trip tests maintain equality for sample data",
+    "Public API documented in core/README.md"
+  ],
+  "owner": "@team/core",
+  "links": ["PD-002", "AGENTS.md#Testing-Guidelines"],
+  "created": "2025-11-01"
+}
+

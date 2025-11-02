@@ -1,0 +1,20 @@
+{
+  "id": "PD-002",
+  "title": "Define baseline JSON Schemas for .vxdoc/.vxlib",
+  "why": "Enable validation, tooling, and predictable formats across modules",
+  "what": [
+    "Add schemas/manifest.schema.json",
+    "Add schemas/node.schema.json and schemas/layer.schema.json",
+    "Add schemas/project.schema.json for high-level document",
+    "Provide sample examples under examples/schemas/ and validation script"
+  ],
+  "acceptance": [
+    "Schemas validate with ajv/pyjsonschema",
+    "Sample .vxdoc mock validates",
+    "CI job validates examples against schemas"
+  ],
+  "owner": "@team/core",
+  "links": ["PD-001", "README.md#Repository Layout"],
+  "created": "2025-11-01"
+}
+

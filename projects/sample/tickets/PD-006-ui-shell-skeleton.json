@@ -1,0 +1,20 @@
+{
+  "id": "PD-006",
+  "title": "UI shell skeleton (Qt + ImGui placeholder)",
+  "why": "Provide windowing, menu stubs, and future docking surface",
+  "what": [
+    "Create ui/ app scaffolding (Qt/PySide6 or C++ Qt)",
+    "Add placeholder canvas and node graph panels",
+    "Wire simple command palette to vxcli commands",
+    "README with dev run instructions"
+  ],
+  "acceptance": [
+    "App window launches locally",
+    "Menu actions trigger stub handlers",
+    "Panels render with temporary content"
+  ],
+  "owner": "@team/ui",
+  "links": ["PD-004", "README.md#Major Systems"],
+  "created": "2025-11-01"
+}
+

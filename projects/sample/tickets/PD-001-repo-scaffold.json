@@ -1,0 +1,20 @@
+{
+  "id": "PD-001",
+  "title": "Scaffold repo layout and tooling",
+  "why": "Establish baseline structure matching README for parallel work",
+  "what": [
+    "Create directories: core/, node_engine/, ui/, plugins/, cli/, schemas/, tests/, examples/, docs/",
+    "Add placeholder READMEs/.gitkeep where needed",
+    "Provide top-level Makefile targets: build, test, fmt",
+    "Document local dev flow in docs/README-dev.md"
+  ],
+  "acceptance": [
+    "Tree matches README layout",
+    "make build and make test run without errors (no-ops allowed)",
+    "Docs explain how to run builds/tests"
+  ],
+  "owner": "@team/devops",
+  "links": ["AGENTS.md", "README.md"],
+  "created": "2025-11-01"
+}
+

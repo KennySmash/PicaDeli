@@ -1,0 +1,21 @@
+{
+  "id": "PD-012",
+  "title": "Node graph core data structures",
+  "milestone": "M1: Core + Node runtime",
+  "why": "Represent nodes, ports, edges, and parameters in-memory and on-disk",
+  "what": [
+    "Define Node, Port, Edge models (Python/Rust placeholder)",
+    "Serialization format consistent with schemas/node.schema.json",
+    "Validation of no cycles (or mark DAG invariant)",
+    "Unit tests for construction and serialization"
+  ],
+  "acceptance": [
+    "Graphs serialize to JSON that validates against schema",
+    "Cycle detection tested",
+    "Public API documented in node_engine/README.md"
+  ],
+  "owner": "@team/node",
+  "links": ["PD-002", "README.md#Node Engine"],
+  "created": "2025-11-01"
+}
+

@@ -1,0 +1,21 @@
+{
+  "id": "PD-017",
+  "title": "Structured logging and error codes (CLI + core)",
+  "milestone": "M1: Core + Node runtime",
+  "why": "Improve debuggability and consistent user feedback",
+  "what": [
+    "Introduce structured logs (level, code, message, context)",
+    "Standardize error codes for validate/serve/pack/unpack",
+    "Add --json output option for machine parsing",
+    "Unit tests for representative failures"
+  ],
+  "acceptance": [
+    "Errors include codes and actionable messages",
+    "--json produces parseable objects",
+    "Docs list codes in docs/CLI.md"
+  ],
+  "owner": "@team/core",
+  "links": ["PD-004", "PD-010", "PD-016"],
+  "created": "2025-11-01"
+}
+
